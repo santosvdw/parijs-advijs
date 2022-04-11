@@ -1,0 +1,7 @@
+Ik heb andere lettertypes gekozen voor de site terwijl ik de site aan het maken was. Ze wijken dus af van het ontwerp.
+Ook heb ik er voor gekozen om alleen index.html en activiteiten.html te ontwerpen, omdat verblijf.html en activiteiten.html
+zowat identitiek zijn en blog.html eigenlijk 2 blokken tekst is met een card er naast, vond ik het niet nodig om die
+helemaal uit te beelden.
+
+
+Idk of dit belangrijk is om te weten maar ik dacht dat ik het toch maar een zou melden. :-)
