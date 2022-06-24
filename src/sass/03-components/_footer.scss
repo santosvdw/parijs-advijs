@@ -1,0 +1,57 @@
+@use '../01-usables/' as *;
+
+.footer {
+    background-color: $grijs;
+    margin-top: 90px;
+    padding: 30px 0px 30px;
+
+    p {
+        max-width: 35vw;
+    }
+
+    a {
+        color: $rood;
+        font-family: $f-poppins;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    table {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        caption-side: bottom;
+
+        caption {
+            margin-top: $m-top;
+        }
+
+        tr {
+            display: flex;
+
+            td {
+                display: inherit;
+                width: 40vw;
+                max-height: 140px;
+                align-items: center;
+
+                span {
+                    display: inherit;
+                    align-self: flex-end;
+                    width: 40vw;
+                    height: 140px;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    flex-flow: column;
+
+                    p {
+                        font-size: 0.8em;
+                    }
+                }
+
+                img.footer_logo {
+                    width: 150px
+                }
+            }
+        }
+    }
+}

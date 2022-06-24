@@ -1,0 +1,630 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background-color: rgba(200, 29, 37, 0.9);
+  color: hsl(0deg, 0%, 100%);
+}
+
+img::selection {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+:root {
+  font-weight: auto;
+}
+:root h1 {
+  font-size: 50pt;
+}
+:root h2 {
+  font-size: 36pt;
+}
+:root h3 {
+  font-size: 30pt;
+}
+:root h4 {
+  font-size: 24pt;
+}
+:root h5 {
+  font-size: 18pt;
+}
+:root h1,
+:root h2,
+:root h3,
+:root h4,
+:root h5,
+:root h6 {
+  font-family: "poppins", sans-serif;
+  color: hsl(0deg, 0%, 7%);
+}
+:root p {
+  font-family: "cabin", sans-serif;
+  color: hsl(0deg, 0%, 7%);
+}
+:root a {
+  text-decoration: none;
+}
+
+.container {
+  overflow-y: hidden;
+}
+
+.footer {
+  background-color: hsl(0deg, 0%, 85%);
+  margin-top: 90px;
+  padding: 30px 0px 30px;
+}
+.footer p {
+  max-width: 35vw;
+}
+.footer a {
+  color: hsl(357deg, 75%, 45%);
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.footer table {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  caption-side: bottom;
+}
+.footer table caption {
+  margin-top: 30px;
+}
+.footer table tr {
+  display: flex;
+}
+.footer table tr td {
+  display: inherit;
+  width: 40vw;
+  max-height: 140px;
+  align-items: center;
+}
+.footer table tr td span {
+  display: inherit;
+  align-self: flex-end;
+  width: 40vw;
+  height: 140px;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-flow: column;
+}
+.footer table tr td span p {
+  font-size: 0.8em;
+}
+.footer table tr td img.footer_logo {
+  width: 150px;
+}
+
+.hero_bg img.bg_img {
+  position: relative;
+  margin: 0;
+  top: calc(-5vw - 10px);
+  left: 0;
+  width: 105vw;
+  filter: brightness(0.7);
+}
+.hero_bg img.bg_div {
+  position: absolute;
+  width: 100vw;
+  z-index: 30;
+  bottom: 0;
+  outline: none;
+}
+
+.hero_section {
+  overflow: hidden;
+  height: 100vh;
+}
+.hero_section .hero_content {
+  display: flex;
+  position: absolute;
+  flex-flow: wrap column;
+  margin-left: 10vw;
+  margin-top: 22vh;
+  z-index: 100;
+}
+.hero_section .hero_content h1,
+.hero_section .hero_content abbr {
+  color: hsl(0deg, 0%, 100%);
+  position: relative;
+  left: -3px;
+}
+.hero_section .hero_content article {
+  max-width: 40vw;
+}
+.hero_section .hero_content article p {
+  color: hsl(0deg, 0%, 100%);
+  font-family: "cabin", sans-serif;
+}
+
+.container .hero_section {
+  height: 406px;
+  position: relative;
+  top: 87px;
+}
+.container .hero_section header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap column;
+  align-items: center;
+  width: 100vw;
+  height: 300px;
+  z-index: 10;
+}
+.container .hero_section header h1 {
+  color: hsl(0deg, 0%, 100%);
+  height: 90px;
+  overflow-y: hidden;
+}
+.container .hero_section header blockquote {
+  font-family: "cabin", sans-serif;
+  color: hsl(0deg, 0%, 100%);
+  width: 500px;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9em;
+}
+.container .hero_section img[src="../import/hero-bg-activiteiten.png"],
+.container .hero_section img[src="../import/hero-bg-verblijf.png"] img[src="../import/hero-bg-blog.png"] {
+  position: relative;
+  width: 100vw;
+}
+.container .hero_section img[src="../import/hero-divider-2.png"] {
+  position: relative;
+  z-index: 2;
+  top: -50px;
+}
+
+.home .nav nav {
+  font-family: "poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 50;
+}
+.home .nav nav :hover {
+  cursor: pointer;
+}
+.home .nav nav .logo {
+  width: 100px;
+  filter: invert(100%);
+  margin-left: 5vw;
+  margin-top: 10px;
+}
+.home .nav nav ul {
+  list-style: none;
+  position: absolute;
+  right: 5vw;
+  top: 35px;
+}
+.home .nav nav ul li {
+  display: inline-block;
+  padding: 0px 10px;
+  /*.underline {
+      text-decoration: underline;
+  }*/
+}
+.home .nav nav ul li :hover {
+  text-decoration: underline;
+  text-decoration-color: hsl(357deg, 75%, 45%);
+}
+.home .nav nav ul li a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.container .nav nav {
+  position: fixed;
+  width: 100vw;
+  font-family: "poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 150;
+  background-color: hsl(0deg, 0%, 7%);
+  padding-bottom: 10px;
+}
+.container .nav nav :hover {
+  cursor: pointer;
+}
+.container .nav nav .logo {
+  width: 100px;
+  margin-left: 5vw;
+  margin-top: 10px;
+  filter: invert(100%);
+}
+.container .nav nav ul {
+  list-style: none;
+  position: absolute;
+  right: 5vw;
+  top: 35px;
+}
+.container .nav nav ul li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+.container .nav nav ul li :hover {
+  text-decoration: underline;
+  text-decoration-color: hsl(357deg, 75%, 45%);
+}
+.container .nav nav ul li a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 100%);
+}
+.container .nav nav ul li .underline {
+  text-decoration: underline;
+}
+
+.nav_helpers {
+  position: relative;
+  width: 100vw;
+  z-index: 150;
+  top: -50px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: hsl(357deg, 75%, 45%);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(357deg, 69%, 34%);
+}
+
+#abt_me {
+  width: 80vw;
+  justify-content: end;
+  display: flex;
+  flex-flow: column wrap;
+}
+#abt_me .content {
+  flex-flow: row;
+  display: inherit;
+  margin-top: 0;
+  justify-content: space-between;
+}
+#abt_me .content img[src="../import/arrow-tekst.png"] {
+  position: absolute;
+  z-index: 10;
+  right: 180px;
+  top: 5px;
+  background-color: rgba(0, 0, 0, 0);
+}
+#abt_me .content .s_card {
+  padding: 10px;
+  background-color: hsl(0deg, 0%, 85%);
+  border-radius: 30px;
+  font-size: 0.9em;
+  width: 365px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+#abt_me .content .s_card p {
+  height: fit-content;
+  width: 200px;
+}
+#abt_me .content .s_card img {
+  aspect-ratio: 1/1;
+  border-radius: 30px;
+  height: 150px;
+  width: 150px;
+}
+#abt_me .content .s_card .s_content {
+  margin-left: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  height: 151px;
+  width: 205px;
+}
+#abt_me .content .s_card .s_content p {
+  margin-top: 10px;
+}
+#abt_me .content .s_card .s_content .icons {
+  display: inherit;
+  text-decoration: none;
+  justify-content: space-between;
+  align-self: end;
+  width: 160px;
+  margin-bottom: 10px;
+}
+#abt_me .content .s_card .s_content .icons svg {
+  fill: hsl(357deg, 75%, 45%);
+}
+#abt_me p {
+  width: 55ch;
+}
+
+#cultuur,
+#winkelen,
+#tours,
+#hotels,
+#abt_me,
+#abt_pt {
+  height: fit-content;
+  width: 80vw;
+  margin-top: 30px;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  display: block;
+  position: relative;
+}
+#cultuur .content,
+#winkelen .content,
+#tours .content,
+#hotels .content,
+#abt_me .content,
+#abt_pt .content {
+  margin-top: 20px;
+}
+#cultuur .content .cards,
+#winkelen .content .cards,
+#tours .content .cards,
+#hotels .content .cards,
+#abt_me .content .cards,
+#abt_pt .content .cards {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  flex-basis: 25%;
+}
+#cultuur .content .cards a,
+#winkelen .content .cards a,
+#tours .content .cards a,
+#hotels .content .cards a,
+#abt_me .content .cards a,
+#abt_pt .content .cards a {
+  margin-top: 20px;
+  text-decoration: none;
+}
+#cultuur .content .cards a :hover > div,
+#winkelen .content .cards a :hover > div,
+#tours .content .cards a :hover > div,
+#hotels .content .cards a :hover > div,
+#abt_me .content .cards a :hover > div,
+#abt_pt .content .cards a :hover > div {
+  background-color: hsl(357deg, 100%, 31%);
+}
+#cultuur .content .cards a div,
+#winkelen .content .cards a div,
+#tours .content .cards a div,
+#hotels .content .cards a div,
+#abt_me .content .cards a div,
+#abt_pt .content .cards a div {
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  background-color: hsl(357deg, 75%, 45%);
+  z-index: -1;
+}
+#cultuur .content .cards a div .image,
+#winkelen .content .cards a div .image,
+#tours .content .cards a div .image,
+#hotels .content .cards a div .image,
+#abt_me .content .cards a div .image,
+#abt_pt .content .cards a div .image {
+  z-index: 0;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  top: -145px;
+}
+#cultuur .content .cards a div .image img,
+#winkelen .content .cards a div .image img,
+#tours .content .cards a div .image img,
+#hotels .content .cards a div .image img,
+#abt_me .content .cards a div .image img,
+#abt_pt .content .cards a div .image img {
+  opacity: 0.25;
+  z-index: -1;
+  height: 200px;
+  width: 200px;
+}
+#cultuur .content .cards a div .content,
+#winkelen .content .cards a div .content,
+#tours .content .cards a div .content,
+#hotels .content .cards a div .content,
+#abt_me .content .cards a div .content,
+#abt_pt .content .cards a div .content {
+  margin: 25px 15px 10px;
+  height: max-content;
+  border-radius: 0;
+  width: fit-content;
+  position: relative;
+  z-index: 100;
+  background: none;
+  top: 10px;
+}
+#cultuur .content .cards a div .content *,
+#winkelen .content .cards a div .content *,
+#tours .content .cards a div .content *,
+#hotels .content .cards a div .content *,
+#abt_me .content .cards a div .content *,
+#abt_pt .content .cards a div .content * {
+  border-radius: 0;
+}
+#cultuur .content .cards a div .content p,
+#winkelen .content .cards a div .content p,
+#tours .content .cards a div .content p,
+#hotels .content .cards a div .content p,
+#abt_me .content .cards a div .content p,
+#abt_pt .content .cards a div .content p {
+  font-size: 0.8em;
+  margin-top: 5px;
+  height: 50px;
+  width: 175px;
+  overflow: hidden;
+}
+#cultuur .content .cards a div .content p,
+#cultuur .content .cards a div .content h5,
+#winkelen .content .cards a div .content p,
+#winkelen .content .cards a div .content h5,
+#tours .content .cards a div .content p,
+#tours .content .cards a div .content h5,
+#hotels .content .cards a div .content p,
+#hotels .content .cards a div .content h5,
+#abt_me .content .cards a div .content p,
+#abt_me .content .cards a div .content h5,
+#abt_pt .content .cards a div .content p,
+#abt_pt .content .cards a div .content h5 {
+  color: hsl(0deg, 0%, 100%);
+}
+#cultuur .content .cards a div .content h5,
+#winkelen .content .cards a div .content h5,
+#tours .content .cards a div .content h5,
+#hotels .content .cards a div .content h5,
+#abt_me .content .cards a div .content h5,
+#abt_pt .content .cards a div .content h5 {
+  height: 55px;
+}
+#cultuur .content .cards a div .content div,
+#winkelen .content .cards a div .content div,
+#tours .content .cards a div .content div,
+#hotels .content .cards a div .content div,
+#abt_me .content .cards a div .content div,
+#abt_pt .content .cards a div .content div {
+  display: flex;
+  height: 55px;
+  align-items: flex-start;
+  line-height: 1.5em;
+  background: none;
+}
+
+#abt_pt p {
+  width: 55ch;
+}
+
+.intro_tekst {
+  display: flex;
+  padding: 30px 0px;
+  background-color: hsl(357deg, 75%, 45%);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  margin-bottom: 0;
+}
+.intro_tekst ::selection {
+  background-color: rgb(255, 255, 255);
+  color: hsl(357deg, 75%, 45%);
+}
+.intro_tekst p {
+  max-width: 66ch;
+  justify-self: center;
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  font-family: "cabin", sans-serif;
+}
+
+.erv_cultuur {
+  width: 100vw;
+  padding: 50px;
+  background-color: hsl(0deg, 0%, 85%);
+  position: relative;
+  display: flex;
+  margin-top: 30px;
+}
+.erv_cultuur img {
+  width: 40%;
+  margin-left: calc(10vw - 50px);
+  border-radius: 3px;
+}
+.erv_cultuur article {
+  max-width: 40vw;
+}
+.erv_cultuur article p,
+.erv_cultuur article h2 {
+  margin-left: 5vw;
+  margin-top: 0%;
+  max-width: 40vw;
+}
+.erv_cultuur article h2 {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.disc_parijs {
+  position: relative;
+  background-color: hsl(0deg, 0%, 100%);
+  height: fit-content;
+  width: 100vw;
+  margin-top: 30px;
+}
+.disc_parijs .ont_parijs h2 {
+  display: block;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10w;
+  height: fit-content;
+}
+.disc_parijs .cards {
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+  margin: 10px 0px;
+}
+.disc_parijs .cards ul {
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  justify-content: space-between;
+}
+.disc_parijs .cards ul li a {
+  text-decoration: none;
+}
+.disc_parijs .cards ul li a .card {
+  width: 250px;
+  display: flex;
+  height: 350px;
+  flex-flow: row wrap;
+  align-content: space-between;
+  background-color: hsl(0deg, 0%, 85%);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.disc_parijs .cards ul li a .card .content {
+  padding: 25px 20px 25px;
+  max-width: 200px;
+}
+.disc_parijs .cards ul li a .card .content h4 {
+  color: hsl(357deg, 75%, 45%);
+}
+.disc_parijs .cards ul li a .card .content p {
+  font-size: 0.85em;
+  max-width: 230px;
+}
+.disc_parijs .cards ul li a .card .image {
+  height: 160px;
+  overflow: hidden;
+}
+.disc_parijs .cards ul li a .card .image img {
+  top: -40px;
+}

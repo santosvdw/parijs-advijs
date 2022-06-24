@@ -1,0 +1,81 @@
+@use '../01-usables/' as *;
+
+.hero_section {
+    overflow: hidden;
+    height: 100vh;
+
+    .hero_content {
+        display: flex;
+        position: absolute;
+        flex-flow: wrap column;
+        margin-left: 10vw;
+        margin-top: 22vh;
+        z-index: 100;
+
+
+        h1,
+        abbr {
+            color: $wit;
+            position: relative;
+            left: -3px;
+        }
+
+        article {
+            max-width: 40vw;
+
+            p {
+                color: $wit;
+                font-family: $f-cabin;
+            }
+        }
+    }
+}
+
+.container {
+.hero_section {
+    height: 406px;
+    position: relative;
+    top: 87px;
+
+    header {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap column;
+        align-items: center;
+        width: 100vw;
+        height: 300px;
+        z-index: 10;
+
+        h1 {
+            color: $wit;
+            height: 90px;
+            overflow-y: hidden;
+            //              text-decoration: underline;
+            //              text-decoration-color: $rood;
+            //              text-decoration-thickness: 3px;
+        }
+
+        blockquote {
+            font-family: $f-cabin;
+            color: $wit;
+            width: 500px;
+            text-align: center;
+            font-style: italic;
+            font-size: 0.9em;
+        }
+    }
+
+    img[src="../import/hero-bg-activiteiten.png"],
+    img[src="../import/hero-bg-verblijf.png"] img[src="../import/hero-bg-blog.png"] {
+        position: relative;
+        width: 100vw;
+    }
+
+    img[src="../import/hero-divider-2.png"] {
+        position: relative;
+        z-index: 2;
+        top: -50px;
+    }
+}
+}

@@ -1,0 +1,30 @@
+@use '../01-usables/' as *;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    outline: none;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*::selection {
+    background-color: rgba(200, 29, 37, 0.9);
+    color: $wit;
+
+}
+
+img::selection {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    background-color: $wit;
+    ;
+}
