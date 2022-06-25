@@ -1,4 +1,4 @@
-# GA NAAR HET PROJECT <a href="https://santosvdw.github.io/parijs-advijs/code/dist/html/index.html" target="_blank">KLIK HIER</a>
+# GA NAAR HET PROJECT [Klik hier](https://santosvdw.github.io/parijs-advijs/src/html/index.html)
 
 # Informatica PO - HTML/CSS
 
