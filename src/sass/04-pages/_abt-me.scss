@@ -181,3 +181,16 @@
         width: 55ch;
     }
 }
+
+#abt_me {
+    display: flex;
+    flex-flow: column wrap;
+
+    #s_arrow {
+        position: absolute;
+        z-index: 10;
+        right: 180px;
+        top: 5px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
