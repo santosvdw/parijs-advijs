@@ -66,16 +66,17 @@
         }
     }
 
-    img[src="../import/hero-bg-activiteiten.png"],
-    img[src="../import/hero-bg-verblijf.png"] img[src="../import/hero-bg-blog.png"] {
+    img[src="../assets/hero-bg-activiteiten.png"],
+    img[src="../assets/hero-bg-verblijf.png"] img[src="../assets/hero-bg-blog.png"] {
         position: relative;
         width: 100vw;
     }
 
-    img[src="../import/hero-divider-2.png"] {
+    img[src="../assets/hero-divider-2.png"] {
         position: relative;
         z-index: 2;
         top: -50px;
+        // filter: invert(100%);
     }
 }
 }

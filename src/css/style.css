@@ -181,12 +181,12 @@ body {
   font-style: italic;
   font-size: 0.9em;
 }
-.container .hero_section img[src="../import/hero-bg-activiteiten.png"],
-.container .hero_section img[src="../import/hero-bg-verblijf.png"] img[src="../import/hero-bg-blog.png"] {
+.container .hero_section img[src="../assets/hero-bg-activiteiten.png"],
+.container .hero_section img[src="../assets/hero-bg-verblijf.png"] img[src="../assets/hero-bg-blog.png"] {
   position: relative;
   width: 100vw;
 }
-.container .hero_section img[src="../import/hero-divider-2.png"] {
+.container .hero_section img[src="../assets/hero-divider-2.png"] {
   position: relative;
   z-index: 2;
   top: -50px;
