@@ -1,0 +1,45 @@
+@use '../01-usables/' as *;
+
+:root {
+    font-weight: auto;
+
+    h1 {
+        font-size: 50pt;
+    }
+
+    h2 {
+        font-size: 36pt;
+    }
+
+    h3 {
+        font-size: 30pt;
+    }
+
+    h4 {
+        font-size: 24pt;
+    }
+
+    h5 {
+        font-size: 18pt;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: $f-poppins;
+        color: $zwart;
+    }
+
+    p {
+        font-family: $f-cabin;
+        color: $zwart;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+}

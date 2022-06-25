@@ -1,0 +1,111 @@
+@use '../01-usables/' as *;
+
+.home {
+.nav {
+    nav {
+        font-family: $f-poppins;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 50;
+
+        :hover {
+            cursor: pointer;
+        }
+
+        .logo {
+            width: 100px;
+            filter: invert(100%);
+            margin-left: 5vw;
+            margin-top: 10px;
+        }
+
+        ul {
+            list-style: none;
+            position: absolute;
+            right: 5vw;
+            top: 35px;
+
+            li {
+                display: inline-block;
+                padding: 0px 10px;
+
+                :hover {
+                    text-decoration: underline;
+                    text-decoration-color: $rood;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $wit;
+                }
+
+                /*.underline {
+                    text-decoration: underline;
+                }*/
+            }
+        }
+    }
+}
+}
+
+.container {
+.nav {
+    nav {
+        position: fixed;
+        width: 100vw;
+        font-family: $f-poppins;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 150;
+        background-color: $zwart;
+        padding-bottom: 10px;
+
+        :hover {
+            cursor: pointer;
+        }
+
+        .logo {
+            width: 100px;
+            margin-left: 5vw;
+            margin-top: 10px;
+            filter: invert(100%);
+        }
+
+        ul {
+            list-style: none;
+            position: absolute;
+            right: 5vw;
+            top: 35px;
+
+            li {
+                display: inline-block;
+                padding: 0px 10px;
+
+                :hover {
+                    text-decoration: underline;
+                    text-decoration-color: $rood;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $wit;
+                }
+
+                .underline {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+}
+
+.nav_helpers {
+    position: relative;
+    width: 100vw;
+    z-index: 150;
+    top: -50px;
+}

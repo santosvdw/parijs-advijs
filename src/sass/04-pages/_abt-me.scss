@@ -1,0 +1,196 @@
+@use '../01-usables/' as *;
+
+#abt_me {
+    width: 80vw;
+    justify-content: end;
+    display: flex;
+    flex-flow: column wrap;
+
+    .content {
+        flex-flow: row;
+        display: inherit;
+        margin-top: 0;
+        justify-content: space-between;
+
+        img[src="../import/arrow-tekst.png"] {
+            position: absolute;
+            z-index: 10;
+            right: 180px;
+            top: 5px;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .s_card {
+            padding: 10px;
+            background-color: $grijs;
+            border-radius: 30px;
+            font-size: 0.9em;
+            width: 365px;
+            display: flex;
+            flex-flow: row nowrap;
+
+            p {
+                height: fit-content;
+                width: 200px;
+            }
+
+            img {
+                aspect-ratio: 1/1;
+                border-radius: 30px;
+                height: 150px;
+                width: 150px;
+            }
+
+            .s_content {
+                margin-left: 10px;
+                display: flex;
+                flex-flow: row wrap;
+                align-content: space-between;
+                height: 151px;
+                width: 205px;
+
+                p {
+                    margin-top: 10px;
+                }
+
+                .icons {
+                    display: inherit;
+                    text-decoration: none;
+                    justify-content: space-between;
+                    align-self: end;
+                    width: 160px;
+                    //margin-left: 10px;
+                    margin-bottom: 10px;
+
+                    svg {
+                        fill: $rood;
+                    }
+                }
+            }
+        }
+    }
+
+    p {
+        width: 55ch;
+    }
+}
+
+#cultuur,
+#winkelen,
+#tours,
+#hotels,
+#abt_me,
+#abt_pt {
+    height: fit-content;
+    width: $c-width;
+    margin-top: $m-top;
+    margin-right: $m-right;
+    margin-left: $m-left;
+    display: block;
+    position: relative;
+    //      background-color: $grijs;
+
+    .content {
+        margin-top: 20px;
+
+        .cards {
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: space-between;
+            flex-basis: 25%;
+
+            a {
+                margin-top: 20px;
+                text-decoration: none;
+
+                :hover>div {
+                    background-color: $donkerrood;
+                }
+
+                div {
+                    overflow: hidden;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 30px;
+                    background-color: $rood;
+                    z-index: -1;
+
+                    .image {
+
+                        z-index: 0;
+                        height: 200px;
+                        width: 200px;
+                        position: relative;
+                        top: -145px;
+
+                        img {
+                            opacity: (0.25);
+                            z-index: -1;
+                            height: 200px;
+                            width: 200px;
+                        }
+                    }
+
+                    .content {
+                        margin: 25px 15px 10px;
+                        height: max-content;
+                        border-radius: 0;
+                        width: fit-content;
+                        position: relative;
+                        z-index: 100;
+                        background: none;
+                        top: 10px;
+
+                        * {
+                            border-radius: 0;
+                        }
+
+                        p {
+                            font-size: 0.8em;
+                            margin-top: 5px;
+                            height: 50px;
+                            width: 175px;
+                            overflow: hidden;
+                        }
+
+                        p,
+                        h5 {
+                            color: $wit;
+                        }
+
+                        h5 {
+                            height: 55px;
+                        }
+
+                        div {
+                            display: flex;
+                            height: 55px;
+                            align-items: flex-start;
+                            line-height: 1.5em;
+                            background: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#abt_pt {
+    p {
+        width: 55ch;
+    }
+}
+
+#abt_me {
+    display: flex;
+    flex-flow: column wrap;
+
+    #s_arrow {
+        position: absolute;
+        z-index: 10;
+        right: 180px;
+        top: 5px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
